@@ -23,6 +23,7 @@ print(d2.name)
 
 
 class Animal():
+    country =   'kenya'#class  property
     def __init__(self,name):
         self.thename   =   name
 
@@ -45,20 +46,36 @@ class Animal():
         if self.thename == 'bob':
             print('woooof')
 
+
+
 cat =   Animal('cutty')
 print(cat.thename)
 cat2=   Animal('Betty')
 print(cat.thename)
+print(cat.country)
 print('bob is a nice puppy')
 dog =   Animal('bob')
 
-
+#deleting a property
+#del object.property
+#el cat.thename
+print(cat.thename)
+print(cat2.thename)
+#deleting an object
+#del object
+del cat
+print(cat)
 
 cat.sound()
 cat.kitty()
 cat2.fear()
 cat.white()
 dog.sounds()
+
+#modifying objectproperty
+#object.property='new value'
+cat.country =   'Uganda'
+print(cat.country)
 
 
 

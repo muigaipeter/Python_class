@@ -15,3 +15,7 @@ while x < 10:
     if x == 5: # condition being tested
         continue
     print(x)
+#git status
+# git add <foldername/filename>
+# git commit -m "message to explain the activity"
+# git push
